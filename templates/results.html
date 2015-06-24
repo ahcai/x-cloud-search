@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SEARCH RESULTS.</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Search results for "{{ text }}":</h2>
+    <div id="results">
+        {% for k in results.keys() %}
+            <form action="/get_link/" method="POST" id="results-form {{ k }}">
+                <input type="hidden" name="file_name" value="{{ k }}">
+                <a href="#" onclick="document.getElementById('results-form {{ k }}').submit();">{{ k }}</a>
+                <br>
+            </form>
+        {% endfor %}
+    </div>
+</body>
+</html>

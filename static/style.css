@@ -1,0 +1,44 @@
+h2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Arial";
+}
+
+#auth-wrapper {
+    text-align: center;
+}
+
+#auth-launch {
+    padding:5px;
+    background-color: #e6e6fa;
+    border: 1px dotted #666;
+    color: #000;
+    text-decoration: none;
+}
+
+#search-wrapper {
+    text-align: center;
+}
+
+#search-launch {
+    padding: 2px;
+    background-color: #f6f1f1;
+    border: 1px dotted #666;
+    color: #000;
+    text-decoration: none;
+}
+
+#results {
+    text-align: center;
+    font-family: "Arial";
+}
+
+a:link {
+    color: #325176;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666666;
+    text-decoration: underline;
+}

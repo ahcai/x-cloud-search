@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SEARCH.</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="auth-wrapper">
+        <form action="" method="POST" id="auth-form">
+            <input type="hidden" name="button-type" value="auth">
+            <input type="hidden" name="account_id">
+            <input id="auth-launch" type="button" value="Authenticate an account">
+        </form>
+    </div>
+    <br>
+    <h2>Type in a keyword to search.</h2>
+    <div id="search-wrapper">
+        <form action="" method="POST" id="search-form">
+            <input type="hidden" name="button-type" value="search">
+            <input type="text" name="text" required>
+            <input id="search-launch" type="submit" value="Search">
+        </form>
+    </div>
+
+    <script type="text/javascript">
+      var app_id = "{{ app_id }}";
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript"
+ src="https://static-cdn.kloudless.com/p/platform/sdk/kloudless.authenticator.v0.1.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='search.js') }}"></script>
+</body>
+</html>
